@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>491</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(41, 80, 255)</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>411</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X2 P/1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Tomada 10A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>int paralelo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X4 P/2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;
+hover background-color: rgb(130, 130, 130);</string>
+       </property>
+       <property name="text">
+        <string>int simples</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Cego</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>int intermed</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Tomada 20A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Tomada 220</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Furado</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Coaxial/RJ</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X2 P/2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X2 P/3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X4 P/4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>4X4 P/6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(234, 237, 255);
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Finalizar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
