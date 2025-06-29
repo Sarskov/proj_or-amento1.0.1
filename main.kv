@@ -1,0 +1,163 @@
+<MainScreen>:
+    ScrollView:
+        do_scroll_x: False
+        do_scroll_y: True
+
+        GridLayout:
+            cols: 1
+            size_hint_y: None
+            height: self.minimum_height
+
+    #:import MDTopAppBar kivymd.uix.toolbar.MDTopAppBar
+    #:import MDFillRoundFlatButton kivymd.uix.button.MDFillRoundFlatButton
+    
+<StyledButton@Button>:
+    background_normal: ''
+    background_down: ''
+    background_color: 0, 0, 0, 0
+    color: 1, 1, 1, 1
+    font_size: "12sp"
+    padding: 4
+    canvas.before:
+        Color:
+            rgba: 0.13, 0.55, 0.80, 1
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [10, 10, 10, 10]
+
+MDScreen:
+    ScreenManager:
+        id: sm
+        HomeScreen:
+            name: 'home'
+        FilesScreen:
+            name: 'files'
+
+
+<HomeScreen@MDScreen>:
+    FloatLayout:
+        GridLayout:
+            rows: 6
+            cols: 3
+            spacing: 4
+            padding: 4
+            size_hint: None, None
+            size: 300, 600
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+            StyledButton:
+                text: 'Int Simples'
+                size_hint: 1, 1
+                on_release: app.on_intsimples()
+
+            StyledButton:
+                text: 'Int Paralelo'
+                size_hint: 1, 1
+                on_release: app.on_intparalelo()
+
+            StyledButton:
+                text: 'Int Intermed'
+                size_hint: 1, 1
+                on_release: app.on_intintermed()
+
+            StyledButton:
+                text: 'Tomada 10A'
+                size_hint: 1, 1
+                on_release: app.on_tmd10a()
+
+            StyledButton:
+                text: 'Tomada 20A'
+                size_hint: 1, 1
+                on_release: app.on_tmd20a()
+
+            StyledButton:
+                text: 'Tomada 220'
+                size_hint: 1, 1
+                on_release: app.on_tmd220()
+
+            StyledButton:
+                text: 'Cego'
+                size_hint: 1, 1
+                on_release: app.on_cego()
+
+            StyledButton:
+                text: 'Furado'
+                size_hint: 1, 1
+                on_release: app.on_furado()
+
+            StyledButton:
+                text: 'Coaxial/Rj'
+                size_hint: 1, 1
+                on_release: app.on_coax()
+
+            StyledButton:
+                text: '4X2 P/1'
+                size_hint: 1, 1
+                on_release: app.on_placa4x2p1()
+
+            StyledButton:
+                text: '4X2 P/2'
+                size_hint: 1, 1
+                on_release: app.on_placa4x2p2()
+
+            StyledButton:
+                text: '4X2 P/3'
+                size_hint: 1, 1
+                on_release: app.on_placa4x2p3()
+
+            StyledButton:
+                text: '4X4 P/2'
+                size_hint: 1, 1
+                on_release: app.on_placa4x4p2()
+
+            StyledButton:
+                text: '4X4 P/4'
+                size_hint: 1, 1
+                on_release: app.on_placa4x4p4()
+
+            StyledButton:
+                text: '4x4 P/6'
+                size_hint: 1, 1
+                on_release: app.on_placa4x4p6()
+
+            Widget:
+                size_hint: 1, 1
+
+            StyledButton:
+                text: 'Finalizar'
+                size_hint: 1, 1
+                on_release: app.on_finalizar()
+
+            Widget:
+                size_hint: 1, 1
+
+        MDFillRoundFlatButton:
+            text: 'Resumo'
+            size_hint: None, None
+            size: 40, 20
+            pos_hint: {'center_x': 0.17, 'y': 0.07}
+            on_release: app.mostrar_sumario()
+
+
+        MDFillRoundFlatButton:
+            text: 'Arquivos'
+            size_hint: None, None
+            size: 40, 20
+            pos_hint: {'center_x': 0.84, 'y': 0.07}
+            on_release:
+                app.update_file_list()
+                root.manager.current = 'files'
+
+<FilesScreen@MDScreen>:
+    BoxLayout:
+        orientation:'vertical'
+
+        MDTopAppBar:
+            title: 'Arquivos Salvos'
+            left_action_items: [['arrow-left', lambda x: setattr(app.root.ids.sm, 'current', 'home')]]
+
+
+        ScrollView:
+            MDList:
+                id: file_list
